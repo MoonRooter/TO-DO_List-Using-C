@@ -16,14 +16,15 @@ A simple command-line To-Do List application written in C that allows users to r
 
 ## 📂 Project Structure
 
-.
-├── main.c
-├── task.c
-├── task.h
-├── user.c
-├── user.h
-
----
+```
+ToDo-List/
+│
+├── main.c      # Entry point
+├── task.c      # Task logic
+├── task.h      # Task declarations
+├── user.c      # User system
+├── user.h      # User declarations
+```
 
 ## ⚙️ How It Works
 
