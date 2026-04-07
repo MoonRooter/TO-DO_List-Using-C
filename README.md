@@ -1,73 +1,109 @@
-# 📝 To-Do List Manager in C
+# 📝 Advanced To-Do List Manager in C
 
-A simple command-line To-Do List application written in C that allows users to register, log in, and manage their daily tasks.
+A powerful **command-line To-Do List Manager** written in C with user authentication and persistent task storage.
 
 ---
 
 ## 🚀 Features
 
-- User Registration & Login  
-- Add Tasks  
-- View Tasks  
-- Mark Tasks as Completed  
-- Menu-driven interface  
+- 👤 User Registration & Login
+- ➕ Add Tasks
+- 📋 View Tasks
+- ✅ Mark Tasks as Completed
+- ❌ Delete Specific Task
+- 🧹 Delete All Tasks
+- 💾 Save & Load Tasks (File Handling)
+- 🔐 Multi-user support
 
 ---
 
 ## 📂 Project Structure
 
 ```
-ToDo-List/
+ToDo-Manager/
 │
-├── main.c      # Entry point
-├── task.c      # Task logic
-├── task.h      # Task declarations
-├── user.c      # User system
-├── user.h      # User declarations
+├── main.c        # Entry point of program
+├── task.c        # Task operations (CRUD)
+├── task.h        # Task declarations
+├── user.c        # User system (login/register)
+├── user.h        # User declarations
 ```
+
+---
 
 ## ⚙️ How It Works
 
-1. User selects:
-   - Login
-   - Register
-
-2. After login:
-   - Add new tasks
-   - View all tasks
-   - Mark tasks as completed
-
-3. Tasks are stored in a linked list (in memory).
+1. User logs in or registers.
+2. Tasks are loaded from storage.
+3. User can:
+   - Add tasks
+   - View tasks
+   - Mark tasks completed
+   - Delete tasks
+4. On exit, tasks are saved automatically.
 
 ---
 
 ## 🛠️ Compilation & Run
 
-Compile:
-gcc main.c task.c user.c -o todo
+### Compile
+```bash
+gcc main.c -o todo
+```
 
-Run:
+### Run
+```bash
 ./todo
+```
 
 ---
 
-## ⚠️ Limitations
+## 💡 Example Menu
 
-- No file storage (data lost after exit)
-- No password encryption
-- Fixed user limit
+```
+====== TO-DO LIST ======
+User: abhishek
+
+1. Add Task
+2. View Tasks
+3. Mark Completed
+4. Delete Task
+5. Delete All Tasks
+6. Exit
+```
+
+---
+
+## 🔧 Technologies Used
+
+- C Programming
+- Linked List (Dynamic Memory)
+- File Handling
+- Modular Programming
+
+---
+
+## ⚠️ Important Notes
+
+- Uses dynamic memory (malloc/free)
+- Tasks persist using file storage
+- Input validation handled for stability
 
 ---
 
 ## 🔮 Future Improvements
 
-- Add file storage
-- Password encryption
-- Better UI
-- Search & delete tasks
+- 🔐 Password encryption
+- 🌐 GUI version
+- 🔍 Search & filter tasks
+- 📊 Task priority system
 
 ---
 
 ## 👨‍💻 Author
 
-Abhishek
+**Abhishek**
+
+---
+
+⭐ If you like this project, give it a star on GitHub!
